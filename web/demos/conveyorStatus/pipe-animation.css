@@ -1,0 +1,65 @@
+@keyframes pipe-left-right {
+    0% {background-position: 0 0;} 100% {background-position: 200px 0;}
+}
+
+@keyframes pipe-right-left {
+    0% {background-position: 200px 0;} 100% {background-position: 0 0;}
+}
+
+@keyframes pipe-top-bottom {
+    0% {background-position: 0 0;} 100% {background-position: 0 200px;}
+}
+
+@keyframes pipe-bottom-top {
+    0% {background-position: 0 200px;} 100% {background-position: 0 0;}
+}
+
+.pipe-left-right {
+    background-color: #000000;
+    background-size: 200px 10px;
+    background-image: linear-gradient(90deg,
+        transparent 0%,
+    	rgba(255, 255, 255, .50) 50%,
+    	transparent 100%);
+    animation: pipe-left-right 3s linear infinite;
+}
+
+.pipe-right-left {
+    background-color: #000000;
+    background-size: 200px 10px;
+    background-image: linear-gradient(90deg,
+        transparent 0%,
+    	rgba(255, 255, 255, .50) 50%,
+    	transparent 100%);
+    animation: pipe-right-left 3s linear infinite;
+}
+
+.pipe-top-bottom {
+    background-color: #000000;
+    background-size: 10px 200px;
+    background-image: linear-gradient(0deg,
+        transparent 0%,
+    	rgba(255, 255, 255, .50) 50%,
+    	transparent 100%);
+    animation: pipe-top-bottom 3s linear infinite;
+}
+
+.pipe-bottom-top {
+    background-color: #000000;
+    background-size: 10px 200px;
+    background-image: linear-gradient(0deg,
+        transparent 0%,
+    	rgba(255, 255, 255, .50) 50%,
+    	transparent 100%);
+    animation: pipe-bottom-top 3s linear infinite;
+}
+
+.belt-stopped {
+      background-color: rgb(237, 10, 24);
+}
+.belt-starting {
+	background-color: rgb(253, 189, 66);
+}
+.belt-running {
+	background-color: rgb(12, 117, 37);
+}

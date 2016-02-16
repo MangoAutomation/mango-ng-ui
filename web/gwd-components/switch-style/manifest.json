@@ -1,0 +1,95 @@
+{
+  "name": "Switch style",
+  "type": "switch-style",
+  "tagName": "switch-style",
+  "version": 0.1,
+  "description": "Switches styles based on a variable",
+  "nestable": true,
+  "files": {
+  },
+  "attributes": [
+   {
+    "name": "value",
+    "label": "Variable",
+    "type": "string",
+    "description": "Variable to monitor",
+    "required": true
+   },
+   {
+    "name": "case1-value",
+    "label": "Case 1 Value",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case1-style",
+    "label": "Case 1 Style",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case2-value",
+    "label": "Case 2 Value",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case2-style",
+    "label": "Case 2 Style",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case3-value",
+    "label": "Case 3 Value",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case3-style",
+    "label": "Case 3 Style",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case4-value",
+    "label": "Case 4 Value",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case4-style",
+    "label": "Case 4 Style",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case5-value",
+    "label": "Case 5 Value",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case5-style",
+    "label": "Case 5 Style",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case6-value",
+    "label": "Case 6 Value",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "case6-style",
+    "label": "Case 6 Style",
+    "type": "string",
+    "required": false
+   }
+  ],
+  "events": [
+  ],
+  "methods": [
+  ]
+}

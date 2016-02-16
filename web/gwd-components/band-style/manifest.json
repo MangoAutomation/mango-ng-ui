@@ -1,0 +1,89 @@
+{
+  "name": "Band style",
+  "type": "band-style",
+  "tagName": "band-style",
+  "version": 0.1,
+  "description": "Changes styles when a variable is in a band of string ranges",
+  "nestable": true,
+  "files": {
+  },
+  "attributes": [
+   {
+    "name": "value",
+    "label": "Variable",
+    "type": "string",
+    "description": "Variable to monitor",
+    "required": true
+   },
+   {
+    "name": "band1-limit",
+    "label": "Band 1 Upper Limit",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "band1-style",
+    "label": "Band 1 Style",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "band2-limit",
+    "label": "Band 2 Upper Limit",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "band2-style",
+    "label": "Band 2 Style",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "band3-limit",
+    "label": "Band 3 Upper Limit",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "band3-style",
+    "label": "Band 3 Style",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "band4-limit",
+    "label": "Band 4 Upper Limit",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "band4-style",
+    "label": "Band 4 Style",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "band5-limit",
+    "label": "Band 5 Upper Limit",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "band5-style",
+    "label": "Band 5 Style",
+    "type": "string",
+    "required": false
+   },
+   {
+    "name": "band6-style",
+    "label": "Band 6 Style",
+    "type": "string",
+    "required": false
+   }
+  ],
+  "events": [
+  ],
+  "methods": [
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ngDashboards",
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-bootstrap": "0.13.x",
+    "angular-resource": "1.4.x",
+    "angular-file-upload": "2.1.x",
+    "ace-builds": "1.2.x",
+    "bootstrap-material-design": "master",
+    "moment": "2.10.x",
+    "moment-timezone": "0.4.x"
+  }
+}

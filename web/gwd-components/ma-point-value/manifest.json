@@ -1,0 +1,61 @@
+{
+  "name": "Mango Point Value",
+  "type": "ma-point-value",
+  "tagName": "ma-point-value",
+  "version": 0.9,
+  "description": "Displays a Mango point value",
+  "defaultHeight": 16,
+  "defaultWidth": 100,
+  "isFixedSize": false,
+  "files": {
+    "css": [
+    ],
+    "js": [
+    ]
+  },
+  "attributes": [
+   {
+    "name": "point",
+    "label": "Point model",
+    "type": "string",
+    "required": true,
+    "description": "The point variable to get the XID from and set the value on"
+   },
+   {
+    "name": "point-xid",
+    "label": "Point XID",
+    "type": "string",
+    "required": false,
+    "description": "The XID of the point to get the value for"
+   },
+   {
+    "name": "display-type",
+    "label": "Display type",
+    "type": "string",
+    "required": true,
+    "description": "Type of value to display",
+    "defaultValue": "rendered",
+    "gwdSpecific": {
+      "type": "dropdown",
+      "items": ["value", "converted", "rendered", "dateTime", "none"]
+    }
+   },
+   {
+    "name": "date-time-format",
+    "label": "Date/time format",
+    "type": "string",
+    "required": false,
+    "description": "Format for displaying the date/time",
+    "defaultValue": "medium",
+    "gwdSpecific": {
+      "type": "dropdown",
+      "items": ["medium", "short", "fullDate", "longDate", "mediumDate", "shortDate", "mediumTime", "shortTime"]
+    }
+   }
+  ],
+  "events": [
+  ],
+  "methods": [
+  ],
+  "nestable": false
+}

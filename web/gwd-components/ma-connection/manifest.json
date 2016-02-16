@@ -1,0 +1,47 @@
+{
+  "name": "Mango Connection",
+  "type": "ma-connection",
+  "tagName": "ma-connection",
+  "version": 0.14,
+  "description": "Sets up the connection to Mango",
+  "nestable": false,
+  "defaultHeight": 50,
+  "defaultWidth": 50,
+  "isFixedSize": true,
+  "files": {
+    "js": ["config.js", "require.js", "ma-connection.js"],
+    "css": ["angular-csp.css"]
+  },
+  "attributes": [
+   {
+    "name": "serverUrl",
+    "label": "Server URL",
+    "type": "string",
+    "description": "Leave blank to use current host",
+    "required": false
+   },
+   {
+       "name": "username",
+       "label": "Username",
+       "type": "string",
+       "required": false
+   },
+   {
+       "name": "password",
+       "label": "Password",
+       "type": "string",
+       "required": false
+   },
+   {
+       "name": "logout",
+       "label": "Logout current user",
+       "type": "boolean",
+       "description": "Logout current user if already logged in",
+       "required": false
+   }
+  ],
+  "events": [
+  ],
+  "methods": [
+  ]
+}

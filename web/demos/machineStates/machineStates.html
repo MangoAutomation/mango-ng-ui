@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head data-gwd-animation-mode="proMode">
+  <meta charset="utf-8">
+  <title>machineStates</title>
+  <meta name="generator" content="Google Web Designer 1.4.2.0915">
+  <meta name="template" content="Expandable 2.2.4">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css" id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      -webkit-transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      -webkit-transform-style: preserve-3d;
+      position: absolute;
+      background-color: transparent;
+    }
+    .gwd-page-wrapper {
+      position: absolute;
+      -webkit-transform: translateZ(0px);
+      background-color: rgb(255, 255, 255);
+    }
+    .page1-content {
+      width: 550px;
+      height: 400px;
+    }
+    .gwd-div-obkw {
+      width: 1366px;
+      height: 768px;
+    }
+    .gwd-div-1t3j {
+      width: 1366px;
+      height: 768px;
+    }
+    .gwd-div-2nhe {
+      position: absolute;
+      text-align: left;
+      color: rgb(0, 0, 0);
+      font-family: Lato;
+      font-size: 60px;
+      font-weight: bold;
+      top: 15px;
+      left: 481px;
+    }
+    .gwd-ma-connection-km69 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 316px;
+      top: -211px;
+    }
+    .gwd-div-1y6h {
+      position: absolute;
+      width: 1300px;
+      left: 33px;
+      top: 100px;
+      height: 300px;
+    }
+    .gwd-div-14x3 {
+      position: absolute;
+      height: 350px;
+      width: 350px;
+      left: 33px;
+      top: 352px;
+    }
+    .gwd-div-dyoq {
+      width: 400px;
+      height: 300px;
+      left: 482.75px;
+      top: 442.02px;
+    }
+    .gwd-div-m9ex {
+      width: 400px;
+      height: 300px;
+      left: 933.04px;
+      top: 442.02px;
+    }
+    .gwd-div-vn30 {
+      width: 400px;
+      height: 300px;
+      left: 33px;
+      top: 440px;
+    }
+    .gwd-div-zkik {
+      position: absolute;
+      left: 33px;
+      top: 352px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      font-family: Roboto;
+      font-size: 26px;
+      height: 30px;
+      width: 400px;
+    }
+    .gwd-div-15b5 {
+      width: 399.99px;
+      left: 482.55px;
+      top: 442px;
+    }
+    .gwd-div-m3or {
+      width: 399.99px;
+      left: 932.54px;
+      top: 442px;
+    }
+    .gwd-div-1ypz {
+      width: 399.99px;
+      left: 33px;
+      top: 440px;
+    }
+  </style>
+  <link href="gwdpage_style.css" data-version="8" data-exports-type="gwd-page" rel="stylesheet">
+  <link href="angular-csp.css" data-version="0.14" data-exports-type="ma-connection" rel="stylesheet">
+  <link href="gwdpagedeck_style.css" data-version="8" data-exports-type="gwd-pagedeck" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script data-source="googbase_min.js" data-version="3" data-exports-type="googbase" type="text/javascript" src="googbase_min.js"></script>
+  <script data-source="gwd_webcomponents_min.js" data-version="4" data-exports-type="gwd_webcomponents" type="text/javascript" src="gwd_webcomponents_min.js"></script>
+  <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" type="text/javascript" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="8" data-exports-type="gwd-pagedeck" type="text/javascript" src="gwdpagedeck_min.js"></script>
+  <script data-source="config.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="config.js"></script>
+  <script data-source="require.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="require.js"></script>
+  <script data-source="ma-connection.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="ma-connection.js"></script>
+</head>
+
+<body class="document-body" ng-cloak="">
+  <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck">
+    <div is="gwd-page" id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-div-1t3j" data-gwd-width="1366px" data-gwd-height="768px">
+      <div class="gwd-page-content page1-content gwd-div-obkw">
+        <div class="gwd-div-2nhe">Machine States</div>
+        <ma-connection id="ma-connection_1" class="gwd-ma-connection-km69" username="guest" password="guest"></ma-connection>
+        <div class="gwd-div-1y6h">
+          <point-values point-xid="belt-1-status" point="belt1" values="belt1Status" from-filter="moment:'subtract':1:'hour'" refresh-interval="1 minute"></point-values>
+          <point-values point-xid="belt-2-status" point="belt2" values="belt2Status" from-filter="moment:'subtract':1:'hour'" refresh-interval="1 minute"></point-values>
+          <point-values point-xid="belt-3-status" point="belt3" values="belt3Status" from-filter="moment:'subtract':1:'hour'" refresh-interval="1 minute"></point-values>
+          <state-chart style="height: 100%; width: 100%"
+                       series-1-values="belt1Status" series-1-title="{{belt1.name}}" series-1-labels="belt1.textRenderer"
+                       series-2-values="belt2Status" series-2-title="{{belt2.name}}" series-2-labels="belt2.textRenderer"
+                       series-3-values="belt3Status" series-3-title="{{belt3.name}}" series-3-labels="belt3.textRenderer">
+          </state-chart>
+        </div>
+        <div class="gwd-div-14x3 gwd-div-vn30">
+          <point-statistics point="belt1" from-filter="moment:'subtract':1:'hour'" refresh-interval="1 minute" statistics="belt1Stats"></point-statistics>
+          <pie-chart style="height: 100%; width: 100%" values="belt1Stats.startsAndRuntimes" value-labels="belt1.textRenderer" options="{depth3D:15,angle:30}"></pie-chart>
+        </div>
+        <div class="gwd-div-14x3 gwd-div-dyoq">
+          <point-statistics point="belt2" from-filter="moment:'subtract':1:'hour'" refresh-interval="1 minute" statistics="belt2Stats"></point-statistics>
+          <pie-chart style="height: 100%; width: 100%" values="belt2Stats.startsAndRuntimes" value-labels="belt2.textRenderer" options="{depth3D:15,angle:30}"></pie-chart>
+        </div>
+        <div class="gwd-div-14x3 gwd-div-m9ex">
+          <point-statistics point="belt3" from-filter="moment:'subtract':1:'hour'" refresh-interval="1 minute" statistics="belt3Stats"></point-statistics>
+          <pie-chart style="height: 100%; width: 100%" values="belt3Stats.startsAndRuntimes" value-labels="belt3.textRenderer" options="{depth3D:15,angle:30}"></pie-chart>
+        </div>
+        <div class="gwd-div-zkik gwd-div-1ypz">Belt 1 - Last Hour</div>
+        <div class="gwd-div-zkik gwd-div-15b5">Belt 2 - Last Hour</div>
+        <div class="gwd-div-zkik gwd-div-m3or">Belt 3 - Last Hour</div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+      document.body.style.opacity = "0";
+      var pageDeck = document.getElementById('pagedeck');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+
+      function handleDomContentLoaded(event) {}
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        document.body.style.opacity = "";
+        setTimeout(function() {
+          pageDeck.goToPage(pageDeck.getDefaultPage().id);
+        }, 0);
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+    })();
+  </script>
+</body>
+
+</html>

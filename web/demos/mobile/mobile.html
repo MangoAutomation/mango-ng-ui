@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head data-gwd-animation-mode="proMode">
+  <meta charset="utf-8">
+  <title>mobile</title>
+  <meta name="generator" content="Google Web Designer 1.4.2.0915">
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      -webkit-transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      -webkit-transform-style: preserve-3d;
+      background-color: transparent;
+    }
+    .gwd-ma-connection-1nw7 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 38px;
+      top: 22px;
+    }
+    .gwd-div-6dbe {
+      font-family: Lato;
+      font-size: 30px;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      text-align: center;
+      top: 0%;
+    }
+    .gwd-img-1vh2 {
+      height: 500px;
+    }
+  </style>
+  <link href="angular-csp.css" data-version="0.14" data-exports-type="ma-connection" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script data-source="gwd_webcomponents_min.js" data-version="4" data-exports-type="gwd_webcomponents" type="text/javascript" src="gwd_webcomponents_min.js"></script>
+  <script data-source="config.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="config.js"></script>
+  <script data-source="require.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="require.js"></script>
+  <script data-source="ma-connection.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="ma-connection.js"></script>
+</head>
+
+<body ng-cloak>
+  <ma-connection id="ma-connection_1" class="gwd-ma-connection-1nw7" username="guest" password="guest"></ma-connection>
+  <div class="gwd-div-6dbe" style="">Mobile demo</div>
+  <div class="gwd-img-1vh2">
+    <point-values point-xid="DP_119588" point="phaseA" latest="100" values="phaseAValues"></point-values>
+    <point-values point-xid="DP_278103" point="phaseB" latest="100" values="phaseBValues"></point-values>
+    <point-values point-xid="DP_331467" point="phaseC" latest="100" values="phaseCValues"></point-values>
+    <serial-chart style="height: 100%; width: 100%" series-1-title="Current Phase A" series-1-values="phaseAValues" series-2-title="Current Phase B" series-2-values="phaseBValues" series-3-title="Current Phase C" series-3-values="phaseCValues" options="{legend:{}, categoryAxis: {labelRotation:45, parseDates:true, minPeriod:'fff', equalSpacing:true}}">
+    </serial-chart>
+  </div>
+</body>
+
+</html>

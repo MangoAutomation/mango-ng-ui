@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head data-gwd-animation-mode="proMode">
+  <meta charset="utf-8">
+  <title>energy</title>
+  <meta name="generator" content="Google Web Designer 1.4.2.0915">
+  <meta data-template-name="gwd-demoTemplate">
+  <meta name="template" content="Expandable 2.2.4">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css" id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      -webkit-transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      -webkit-transform-style: preserve-3d;
+      position: absolute;
+      background-color: transparent;
+    }
+    .gwd-page-wrapper {
+      position: absolute;
+      -webkit-transform: translateZ(0px);
+      background-color: rgb(255, 255, 255);
+    }
+    .page1-content {
+      width: 550px;
+      height: 400px;
+    }
+    .gwd-div-s9bb {
+      width: 1366px;
+      height: 768px;
+    }
+    .gwd-div-1o0m {
+      width: 1366px;
+      height: 768px;
+    }
+    .gwd-ma-connection-1q6m {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 264px;
+      top: -242px;
+    }
+    .gwd-div-128w {
+      position: absolute;
+      font-family: Lato;
+      font-weight: bold;
+      text-align: left;
+      color: rgb(0, 0, 0);
+      font-size: 60px;
+      top: 15px;
+      left: 462px;
+    }
+    .gwd-div-1yy9 {
+      position: absolute;
+      top: 100px;
+      height: 650px;
+      width: 1300px;
+      left: 33px;
+    }
+  </style>
+  <link href="gwdpage_style.css" data-version="8" data-exports-type="gwd-page" rel="stylesheet">
+  <link href="angular-csp.css" data-version="0.14" data-exports-type="ma-connection" rel="stylesheet">
+  <link href="gwdpagedeck_style.css" data-version="8" data-exports-type="gwd-pagedeck" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet" type="text/css">
+  <script data-source="googbase_min.js" data-version="3" data-exports-type="googbase" type="text/javascript" src="googbase_min.js"></script>
+  <script data-source="gwd_webcomponents_min.js" data-version="4" data-exports-type="gwd_webcomponents" type="text/javascript" src="gwd_webcomponents_min.js"></script>
+  <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" type="text/javascript" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="8" data-exports-type="gwd-pagedeck" type="text/javascript" src="gwdpagedeck_min.js"></script>
+  <script data-source="config.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="config.js"></script>
+  <script data-source="require.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="require.js"></script>
+  <script data-source="ma-connection.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="ma-connection.js"></script>
+</head>
+
+<body class="document-body" ng-cloak="">
+  <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck">
+    <div is="gwd-page" id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-div-1o0m" data-gwd-width="1366px" data-gwd-height="768px">
+      <div class="gwd-page-content page1-content gwd-div-s9bb">
+        <point-values point-xid="dev-weight" point="devWeight" rollup="INTEGRAL" rollup-interval="1 DAYS" from-filter="moment:'startOf':'week'|moment:'subtract':1:'week'" to-filter="moment:'startOf':'week'" refresh-interval="5 minutes" values="lastWeekDevTonnes"></point-values>
+        <point-values point="devWeight" rollup="INTEGRAL" rollup-interval="1 DAYS" from-filter="moment:'startOf':'week'" refresh-interval="5 minutes" values="thisWeekDevTonnes"></point-values>
+        <point-values point-xid="longwall-weight" point="lwWeight" rollup="INTEGRAL" rollup-interval="1 DAYS" from-filter="moment:'startOf':'week'|moment:'subtract':1:'week'" to-filter="moment:'startOf':'week'" refresh-interval="5 minutes" values="lastWeekLwTonnes"></point-values>
+        <point-values point="lwWeight" rollup="INTEGRAL" rollup-interval="1 DAYS" from-filter="moment:'startOf':'week'" refresh-interval="5 minutes" values="thisWeekLwTonnes"></point-values>
+        <ma-connection id="ma-connection_1" class="gwd-ma-connection-1q6m" username="guest" password="guest"></ma-connection>
+        <div class="gwd-div-128w">Weekly Tonnage</div>
+        <div class="gwd-div-1yy9">
+          <serial-chart style="height: 100%; width: 100%" category-format="dddd" series-1-title="Last Week Longwall" series-1-values="lastWeekLwTonnes" series-1-type="column" series-1-color="rgb(13, 142, 207)" series-2-title="Last Week Development" series-2-values="lastWeekDevTonnes"
+          series-2-type="column" series-2-color="rgb(176, 222, 9)" series-3-title="This Week Longwall" series-3-values="thisWeekLwTonnes" series-3-type="column" series-3-color="rgb(13, 142, 207)" series-4-title="This Week Development" series-4-values="thisWeekDevTonnes"
+          series-4-type="column" series-4-color="rgb(176, 222, 9)" stack-type="regular" options="{legend:{},graphs:[{id: 'series-1',clustered:false},{id: 'series-2',clustered:false},{id: 'series-3',clustered:false, newStack:true,columnWidth:0.5},{id: 'series-4',clustered:false,columnWidth:0.5}]}">
+          </serial-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+      document.body.style.opacity = "0";
+      var pageDeck = document.getElementById('pagedeck');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+
+      function handleDomContentLoaded(event) {}
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        document.body.style.opacity = "";
+        setTimeout(function() {
+          pageDeck.goToPage(pageDeck.getDefaultPage().id);
+        }, 0);
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+    })();
+  </script>
+  <style type="text/css">
+    .amcharts-graph-series-1 path, .amcharts-graph-series-3 path, .amcharts-legend-item-series-1 path, .amcharts-legend-item-series-3 path {
+      fill: rgb(13, 142, 207);
+      stroke: rgb(13, 142, 207);
+    }
+    .amcharts-graph-series-2 path, .amcharts-graph-series-4 path, .amcharts-legend-item-series-2 path, .amcharts-legend-item-series-4 path {
+      fill: rgb(176, 222, 9);
+      stroke: rgb(176, 222, 9);
+    }
+    .amcharts-graph-series-1 path, .amcharts-graph-series-2 path, .amcharts-legend-item-series-1 path, .amcharts-legend-item-series-2 path {
+      fill-opacity: 0.3;
+    }
+    .amcharts-graph-series-3 path, .amcharts-graph-series-4 path, .amcharts-legend-item-series-3 path, .amcharts-legend-item-series-4 path {
+      fill-opacity: 1;
+    }
+  </style>
+</body>
+
+</html>

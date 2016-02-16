@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ngDashboardsDemo</title>
+  <meta name="generator" content="Google Web Designer 1.5.4.0113">
+  <meta name="template" content="Expandable 2.2.4">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css" id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      position: absolute;
+      background-color: transparent;
+    }
+    .gwd-page-wrapper {
+      position: absolute;
+      transform: translateZ(0px);
+      background-color: rgb(255, 255, 255);
+    }
+    .page1-content {
+      width: 550px;
+      height: 400px;
+    }
+    .gwd-div-59fh {
+      width: 1920px;
+      height: 1080px;
+    }
+    .gwd-div-zw9j {
+      width: 1920px;
+      height: 1080px;
+    }
+    .gwd-img-19qt {
+      position: absolute;
+      transform-style: preserve-3d;
+      width: 200px;
+      height: 157.03px;
+      transform-origin: 100px 78.5px 0px;
+      left: 0px;
+      top: 0.31618px;
+      transform: rotateY(0deg);
+    }
+    #page1.gwd-play-animation .gwd-gen-eszwgwdanimation {
+      animation: gwd-gen-eszwgwdanimation_gwd-keyframes 4s linear 0s infinite normal forwards;
+    }
+    @keyframes gwd-gen-eszwgwdanimation_gwd-keyframes {
+      0% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        animation-timing-function: linear;
+      }
+      50% {
+        transform: matrix3d(-1, 0, -3.92697e-05, 0, 0, 1, 0, 0, 3.92697e-05, 0, -1, 0, 0, 0, 0, 1);
+        animation-timing-function: linear;
+      }
+      100% {
+        transform: matrix3d(0.999848, 0, 0.0174524, 0, 0, 1, 0, 0, -0.0174524, 0, 0.999848, 0, 0, 0, 0, 1);
+        animation-timing-function: linear;
+      }
+    }
+    .gwd-div-1rzc {
+      position: absolute;
+      font-family: Lato;
+      text-align: left;
+      color: rgb(0, 0, 0);
+      white-space: nowrap;
+      font-size: 80px;
+      top: 90%;
+      left: 100%;
+      transform: translate(0%);
+    }
+    @keyframes gwd-empty-animation {
+      0% {
+        opacity: 0.001;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .gwd-point-list-1fcs {
+      transform-origin: 50% 50% 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      width: 100px;
+      height: 40px;
+      left: 200px;
+      top: 100px;
+    }
+    .gwd-point-list-1cr8 {
+      position: absolute;
+      transform-style: preserve-3d;
+      width: 152px;
+      height: 44px;
+      transform-origin: 76px 22px 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      left: 268.5px;
+      top: 318px;
+    }
+    .gwd-point-list-1cwy {
+      position: absolute;
+      transform-style: preserve-3d;
+      width: 194px;
+      height: 50px;
+      transform-origin: 97px 25px 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      left: 136px;
+      top: 300px;
+    }
+    .gwd-point-list-12rh {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform-origin: 118px 7.5px 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      height: 20px;
+      width: 200px;
+      left: 156.5px;
+      top: 300px;
+    }
+    .gwd-point-list-1pri {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 47px;
+      top: 18px;
+    }
+    .gwd-point-value-12po {
+      position: absolute;
+      transform-style: preserve-3d;
+      width: 175px;
+      height: 33px;
+      transform-origin: 87.5px 16.5px 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      left: 304px;
+      top: 301.5px;
+    }
+    .gwd-point-value-fz1y {
+      left: 565px;
+      top: 302px;
+    }
+    .gwd-point-value-1pe7 {
+      left: 316.5px;
+      top: 302px;
+      font-family: Lato;
+      font-size: 32px;
+      color: rgb(252, 12, 27);
+    }
+    .gwd-span-1mx6 {
+      font-family: Lato;
+    }
+    .gwd-my-qrcode-mwqc {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 273px;
+      top: 103px;
+    }
+    .gwd-point-list-im5s {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: -746.898px;
+      top: 0px;
+    }
+    .gwd-point-value-1n2n {
+      position: absolute;
+      transform-style: preserve-3d;
+      width: 100px;
+      height: 16px;
+      transform-origin: 50% 50% 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      left: -480.898px;
+      top: 70px;
+    }
+    .gwd-point-value-1rkp {
+      position: absolute;
+      transform-style: preserve-3d;
+      width: 188px;
+      transform-origin: 94px 13px 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      height: 20px;
+      font-family: Lato;
+      font-size: 20px;
+      left: 312px;
+      top: 325.2px;
+    }
+    .gwd-point-value-hwmt {
+      position: absolute;
+      transform-style: preserve-3d;
+      width: 150px;
+      transform-origin: 75px 27px 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      height: 20px;
+      color: rgb(252, 12, 27);
+      font-size: 20px;
+      font-family: Lato;
+      left: 400px;
+      top: 290px;
+    }
+    .gwd-div-14fc {
+      position: absolute;
+      text-align: left;
+      font-family: Lato;
+      overflow: visible;
+      white-space: nowrap;
+      height: 48px;
+      width: 456.203px;
+      left: 40.7%;
+      top: 88px;
+      font-size: 18px;
+    }
+    .gwd-point-list-hxxf {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform-origin: 57px 39px 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      height: 20px;
+      width: 100px;
+      left: 138.429px;
+      top: 310.328px;
+    }
+    .gwd-point-value-dftl {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      left: 121.5px;
+      top: 289px;
+    }
+    .gwd-point-list-19zx {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform-origin: 78px 10px 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      font-family: Roboto;
+      font-size: 18px;
+      height: 24px;
+      width: 300px;
+      left: 547.5px;
+      top: 87px;
+    }
+    .gwd-div-1s24 {
+      font-family: Roboto;
+      height: 20px;
+      width: 300px;
+      left: 549.5px;
+      top: 130.5px;
+    }
+    .gwd-point-value-h4ad {
+      left: 325.5px;
+      top: 204px;
+    }
+    .gwd-div-jrpr {
+      position: absolute;
+      width: 200px;
+      height: 157.016px;
+      left: 16.5px;
+      top: 17.5px;
+    }
+    .gwd-band-style-1dee {
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+    }
+    .gwd-point-value-17ag {
+      height: 100%;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+    }
+    .gwd-switch-style-70qc {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform-origin: 92.5px 24px 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      height: 20px;
+      width: 200px;
+      left: 318px;
+      top: 694.5px;
+    }
+    .gwd-band-style-lgjj {
+      position: absolute;
+      width: 200px;
+      height: 20px;
+      left: 318px;
+      top: 607px;
+    }
+    .gwd-point-value-onoc {
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-size: 20px;
+    }
+    .gwd-point-value-9f6n {
+      left: 407px;
+      top: 479px;
+    }
+    .gwd-ma-connection-51oi {
+      position: absolute;
+      transform-style: preserve-3d;
+      width: 50px;
+      height: 50px;
+      transform-origin: 50% 50% 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      left: -307px;
+      top: -249px;
+    }
+    .gwd-point-value-1s39 {
+      position: absolute;
+      transform-style: preserve-3d;
+      width: 100px;
+      height: 16px;
+      transform-origin: 50% 50% 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      left: 348px;
+      top: -91px;
+    }
+    @keyframes gwd-gen-1xovgwdanimation_gwd-keyframes {
+      0% {
+        left: 100%;
+        transform: translate(0%);
+        animation-timing-function: linear;
+      }
+      100% {
+        left: 0%;
+        transform: translate(-100%);
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-1xovgwdanimation {
+      animation: gwd-gen-1xovgwdanimation_gwd-keyframes 10s linear 0s infinite normal forwards;
+    }
+    .gwd-div-1ka8 {
+      font-family: Roboto;
+      height: 20px;
+      width: 300px;
+      left: 549.5px;
+      top: 111px;
+    }
+    .gwd-point-value-1w56 {
+      position: absolute;
+      width: 100px;
+      height: 16px;
+      left: 2202.5px;
+      top: 211px;
+    }
+    .gwd-input-1hsy {
+      position: absolute;
+      left: 1312.5px;
+      top: 661px;
+      height: 30px;
+      width: 200px;
+    }
+    .gwd-input-9qwq {
+      left: 1547px;
+      top: 661px;
+    }
+    .gwd-input-1ogl {
+      font-family: Roboto;
+      font-size: 20px;
+      left: 361.669px;
+      top: 893px;
+    }
+    .gwd-input-bz2o {
+      border: 1px solid rgb(169, 169, 169);
+      padding-left: 2px;
+      padding-right: 2px;
+      -webkit-appearance: square-button;
+      width: 29.13px;
+      height: 30px;
+      left: 565.669px;
+      top: 929.5px;
+      background-color: rgb(221, 221, 221);
+    }
+    .gwd-input-mert {
+      border: 1px solid rgb(169, 169, 169);
+      padding-left: 2px;
+      padding-right: 2px;
+      -webkit-appearance: square-button;
+      width: 29.13px;
+      height: 30px;
+      left: 566.169px;
+      top: 857.5px;
+      background-color: rgb(221, 221, 221);
+    }
+    .gwd-band-style-1qxk {
+      position: absolute;
+      width: 200px;
+      height: 30px;
+      left: 1313px;
+      top: 410px;
+    }
+    .gwd-input-1uo9 {
+      width: 29.13px;
+      height: 30px;
+      left: 566.169px;
+      top: 891px;
+    }
+    .gwd-input-lnzs {
+      font-family: Roboto;
+      font-size: 20px;
+      left: 362.169px;
+      top: 857.5px;
+    }
+    .gwd-div-tthr {
+      position: absolute;
+      font-family: 'Times New Roman';
+      text-align: left;
+      color: rgb(0, 0, 0);
+      left: 1050px;
+      top: 554px;
+    }
+    .gwd-div-1drw {
+      font-family: Roboto;
+      font-size: 30px;
+      left: 217.169px;
+      top: 931.5px;
+    }
+    .gwd-div-1wlf {
+      font-family: Roboto;
+      font-size: 30px;
+      left: 216.669px;
+      top: 894.5px;
+    }
+    .gwd-div-1d0h {
+      font-family: Roboto;
+      font-size: 30px;
+      left: 216.669px;
+      top: 857.5px;
+    }
+    .gwd-point-value-hzht {
+      position: absolute;
+      width: 100px;
+      height: 16px;
+      left: -171px;
+      top: 386px;
+    }
+    .gwd-band-style-1fdg {
+      position: absolute;
+      width: 200px;
+      height: 30px;
+      left: 362.169px;
+      top: 787.5px;
+    }
+    .gwd-point-value-1igh {
+      position: absolute;
+      font-family: Roboto;
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      left: 2069px;
+      top: 617px;
+    }
+    .gwd-div-13x3 {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      height: 100%;
+      width: 100%;
+      border-width: 0px;
+      border-style: none;
+      background-image: none;
+      background-color: rgb(68, 147, 241);
+    }
+    .gwd-point-value-1nww {
+      width: 200px;
+      font-family: Roboto;
+      font-size: 32px;
+      height: 40px;
+      text-align: center;
+      transform-origin: 50% 50% 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      left: 673.5px;
+      top: 775px;
+    }
+    .gwd-div-bjyd {
+      position: absolute;
+      border-width: 2px;
+      border-style: solid;
+      width: 23px;
+      height: 154px;
+      transform-origin: 13.5px 79px 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      left: 835px;
+      top: 690px;
+    }
+    .gwd-img-lgm3 {
+      position: absolute;
+      width: 524px;
+      height: 561px;
+      left: 15px;
+      top: 184px;
+    }
+    .gwd-div-1e5z {
+      height: 154px;
+      width: 23px;
+    }
+    .gwd-div-1uy0 {
+      left: 334px;
+      top: 393px;
+    }
+    .gwd-point-value-5ztb {
+      font-size: 24px;
+      left: 301.5px;
+      top: 499.5px;
+    }
+    .gwd-point-value-1ol1 {
+      font-size: 24px;
+      left: 374.5px;
+      top: 465px;
+    }
+    .gwd-div-1pts {
+      position: absolute;
+      text-align: left;
+      color: rgb(0, 0, 0);
+      font-family: Roboto;
+      font-size: 24px;
+      left: 536px;
+      top: 822px;
+    }
+    .gwd-div-ej2s {
+      left: 436px;
+      top: 526px;
+    }
+    .gwd-div-1gik {
+      left: 534px;
+      top: 395px;
+    }
+    .gwd-div-4aks {
+      left: 235px;
+      top: 527px;
+    }
+    .gwd-point-value-1x39 {
+      left: 523.5px;
+      top: 704.5px;
+    }
+    .gwd-point-value-mpib {
+      text-align: left;
+      height: 24px;
+      left: 182.25px;
+      top: 232.5px;
+    }
+    .gwd-point-value-17fl {
+      text-align: left;
+      left: 389.5px;
+      top: 681.5px;
+    }
+    .gwd-div-13o4 {
+      position: absolute;
+      text-align: left;
+      color: rgb(0, 0, 0);
+      font-family: Roboto;
+      font-size: 24px;
+      left: 997.248px;
+      top: 1019.5px;
+    }
+    .gwd-point-value-1sfj {
+      left: 2202.5px;
+      top: 268px;
+    }
+    .gwd-img-1ca4 {
+      position: absolute;
+      width: 20px;
+      height: 77.1px;
+      left: 960.25px;
+      top: 996px;
+    }
+    .gwd-div-16w8 {
+      position: absolute;
+      text-align: left;
+      color: rgb(0, 0, 0);
+      font-family: Lato;
+      font-size: 60px;
+      left: 547.5px;
+      top: 12px;
+    }
+    .gwd-point-value-1nx1 {
+      left: 2202.5px;
+      top: 389.5px;
+    }
+    .gwd-switch-style-lvm9 {
+      position: absolute;
+      left: 23px;
+      top: 813.5px;
+      width: 900px;
+      height: 50px;
+    }
+    .gwd-div-4dzm {
+      position: absolute;
+      text-align: left;
+      align-self: stretch;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      font-size: 40px;
+      font-family: Roboto;
+      height: 100%;
+    }
+    .gwd-div-cvzv {
+      text-align: center;
+    }
+    .gwd-div-1bb7 {
+      height: 50px;
+      width: 900px;
+    }
+    .gwd-switch-style-lpj5 {
+      left: 30px;
+      top: 1025.5px;
+    }
+    .gwd-point-value-tn0t {
+      left: 169.5px;
+      top: 464.5px;
+    }
+    .gwd-div-18ks {
+      position: absolute;
+      height: 250px;
+      width: 250px;
+      left: 234.5px;
+      top: 12px;
+    }
+    .gwd-div-11iy {
+      position: absolute;
+      width: 300px;
+      height: 250px;
+      left: 34px;
+      top: 647px;
+    }
+    .gwd-switch-style-1ou6 {
+      left: 31px;
+      top: 975.5px;
+    }
+    .gwd-div-ja3x {
+      position: absolute;
+      width: 1282px;
+      height: 431px;
+      left: 592px;
+      top: 334px;
+    }
+    .gwd-input-4mxv {
+      position: absolute;
+      left: 1422px;
+      top: 245px;
+      width: 150px;
+      height: 24px;
+    }
+    .gwd-input-foov {
+      left: 1434.5px;
+      top: 148px;
+    }
+    .gwd-input-tlmp {
+      position: absolute;
+      width: 27px;
+      height: 24px;
+      left: 1740px;
+      top: 193px;
+    }
+    .gwd-input-1bpa {
+      position: absolute;
+      width: 145px;
+      height: 24px;
+      left: 1771px;
+      top: 196px;
+    }
+    .gwd-div-1goh {
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      left: 1142px;
+      top: 722px;
+    }
+    .gwd-div-1tjp {
+      width: 230px;
+      height: 230px;
+      left: 1403px;
+      top: 846px;
+    }
+    .gwd-div-pbmn {
+      width: 230px;
+      height: 230px;
+      left: 1668px;
+      top: 846px;
+    }
+    .gwd-div-3qrj {
+      position: absolute;
+      font-family: 'Times New Roman';
+      text-align: left;
+      color: rgb(0, 0, 0);
+      left: 1281px;
+      top: 109.5px;
+    }
+    .gwd-div-1o2k {
+      left: 574.5px;
+      top: 244.5px;
+      width: 1300px;
+      height: 380px;
+    }
+    .gwd-div-1w2d {
+      width: 650px;
+      left: 717px;
+      top: 616.5px;
+      height: 400px;
+    }
+    .gwd-input-m16o {
+      left: 1281px;
+      top: 148px;
+    }
+    .gwd-div-818e {
+      position: absolute;
+      text-align: left;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-size: 20px;
+    }
+    .gwd-input-dkn1 {
+      position: absolute;
+      height: 50px;
+      width: 300px;
+      left: 1593.5px;
+      top: 119.5px;
+      font-family: Roboto;
+    }
+    .gwd-div-xada {
+      position: absolute;
+      width: 350px;
+      height: 85px;
+      left: 1077px;
+      top: 120px;
+    }
+    .gwd-input-1jue {
+      display: inline-flex;
+      height: 20px;
+      overflow: hidden;
+      padding-bottom: 0px;
+      padding-left: 1px;
+      padding-top: 0px;
+      width: 225.859px;
+      align-items: center;
+    }
+    .gwd-div-1m8v {
+      left: 1260.5px;
+      top: 119.5px;
+      font-family: Roboto;
+    }
+    .gwd-div-tb71 {
+      position: absolute;
+      height: 69px;
+      width: 300px;
+      left: 1367px;
+      top: 12px;
+      font-family: Roboto;
+    }
+    .editable {}.gwd-div-ryyo {
+      left: 1384.5px;
+      top: 641.5px;
+    }
+    .gwd-point-list-1hi9 {
+      left: 1383.5px;
+      top: 661.5px;
+    }
+    .gwd-div-p0ll {
+      left: 888px;
+      top: 120px;
+      font-family: Roboto;
+    }
+    .editable {}.gwd-div-1amc {
+      left: 548px;
+      top: 162.5px;
+    }
+    .gwd-div-123d {
+      left: 547.5px;
+      top: 206.5px;
+    }
+    .gwd-point-list-1fkt {
+      left: 547.5px;
+      top: 182px;
+    }
+    .gwd-point-list-i776 {
+      left: 547.833px;
+      top: 104.333px;
+    }
+    .gwd-div-1c2l {
+      left: 547.5px;
+      top: 83.5px;
+    }
+    .gwd-div-1wek {
+      left: 548px;
+      top: 127.5px;
+    }
+    .gwd-point-list-1san {
+      left: 1383.5px;
+      top: 697.5px;
+    }
+    .gwd-div-1ia0 {
+      left: 1383.5px;
+      top: 701.5px;
+    }
+  </style>
+  <link href="gwdpage_style.css" data-version="8" data-exports-type="gwd-page" rel="stylesheet">
+  <link href="angular-csp.css" data-version="0.14" data-exports-type="ma-connection" rel="stylesheet">
+  <link href="gwdimage_style.css" data-version="7" data-exports-type="gwd-image" rel="stylesheet">
+  <link href="gwdpagedeck_style.css" data-version="8" data-exports-type="gwd-pagedeck" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet" type="text/css">
+  <script data-source="googbase_min.js" data-version="3" data-exports-type="googbase" type="text/javascript" src="googbase_min.js"></script>
+  <script data-source="gwd_webcomponents_min.js" data-version="4" data-exports-type="gwd_webcomponents" type="text/javascript" src="gwd_webcomponents_min.js"></script>
+  <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" type="text/javascript" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="8" data-exports-type="gwd-pagedeck" type="text/javascript" src="gwdpagedeck_min.js"></script>
+  <script data-source="gwdimage_min.js" data-version="7" data-exports-type="gwd-image" type="text/javascript" src="gwdimage_min.js"></script>
+  <script data-source="config.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="config.js"></script>
+  <script data-source="require.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="require.js"></script>
+  <script data-source="ma-connection.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="ma-connection.js"></script>
+</head>
+
+<body class="document-body ng-cloak">
+  <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck">
+    <div is="gwd-page" id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-div-zw9j" data-gwd-width="1920px" data-gwd-height="1080px" data-gwd-name="">
+      <div class="gwd-page-content page1-content gwd-div-59fh">
+        <img is="gwd-image" source="assets/Pump drawing (1).png" id="gwd-image_3" class="gwd-img-lgm3">
+        <div class="gwd-div-14fc gwd-div-1ka8 gwd-div-1c2l" style="">Point 1 (line graph):</div>
+        <div class="gwd-div-14fc gwd-div-1s24 editable gwd-div-1wek">Current value: {{point.renderedValue}}</div>
+        <div class="gwd-div-jrpr">
+          <img is="gwd-image" source="assets/Deltamation_icon_RGB.jpg" class="gwd-img-19qt gwd-gen-eszwgwdanimation" id="gwd-image_2">
+        </div>
+        <point-list id="point-list_1" class="gwd-point-list-19zx gwd-point-list-i776" ng-model="point" order="deviceName, name"></point-list>
+        <ma-connection id="ma-connection_1" class="gwd-ma-connection-51oi" username="guest" password="guest"></ma-connection>
+        <div class="gwd-div-1rzc gwd-gen-1xovgwdanimation" style="">{{message.value}}</div>
+        <point-value id="point-value_4" point="cpuTemp" display-type="none" class="gwd-point-value-1w56" point-xid="cpuTemp"></point-value>
+        <point-value id="point-value_10" point="message" display-type="none" class="gwd-point-value-1w56 gwd-point-value-1sfj" point-xid="sign-message"></point-value>
+        <point-value id="point-value_11" point="lightningCode" display-type="none" class="gwd-point-value-1w56 gwd-point-value-1sfj gwd-point-value-1nx1" point-xid="lightning-code"></point-value>
+        <point-value id="point-value_6" point="tankLevel2" display-type="rendered" class="gwd-point-value-1w56 gwd-point-value-1nww gwd-point-value-1ol1" point-xid="tank-level-2"></point-value>
+        <point-value id="point-value_7" point="tankLevel1" display-type="rendered" class="gwd-point-value-1w56 gwd-point-value-1nww gwd-point-value-5ztb gwd-point-value-tn0t" point-xid="tank-level-1"></point-value>
+        <point-value id="point-value_8" display-type="rendered" class="gwd-point-value-1w56 gwd-point-value-1nww gwd-point-value-5ztb gwd-point-value-1x39 gwd-point-value-17fl" point-xid="flow-out"></point-value>
+        <point-value id="point-value_9" display-type="rendered" class="gwd-point-value-1w56 gwd-point-value-1nww gwd-point-value-5ztb gwd-point-value-1x39 gwd-point-value-mpib" point-xid="flow-in"></point-value>
+        <input class="gwd-input-1hsy gwd-input-lnzs" id="mid-range-value" type="number" ng-model="bands.midValue" ng-init="bands.midValue=8">
+        <input class="gwd-input-1hsy gwd-input-1ogl" id="high-range-value" type="number" ng-model="bands.highValue" ng-init="bands.highValue=15">
+        <input class="gwd-input-1hsy gwd-input-9qwq gwd-input-1uo9" id="mid-range-color" type="color" ng-model="bands.midColor" ng-init="bands.midColor='#FF8000'">
+        <input class="gwd-input-1hsy gwd-input-9qwq gwd-input-mert" id="low-range-color" type="color" ng-model="bands.lowColor" ng-init="bands.lowColor='#00FF00'">
+        <input class="gwd-input-1hsy gwd-input-9qwq gwd-input-bz2o" id="high-range-color" type="color" ng-model="bands.highColor" ng-init="bands.highColor='#FF0000'">
+        <div class="gwd-div-tthr gwd-div-1d0h">Low range</div>
+        <div class="gwd-div-tthr gwd-div-1drw">High range</div>
+        <div class="gwd-div-tthr gwd-div-1wlf">Mid range</div>
+        <band-style id="band-style_1" value="point.convertedValue" class="gwd-band-style-1fdg" band1-limit="{{bands.midValue}}" band1-style="{color:bands.lowColor}" band2-style="{color:bands.midColor}" band3-style="{color:bands.highColor}" band2-limit="{{bands.highValue}}">
+          <div class="gwd-div-818e" style="">{{point.renderedValue}}</div>
+        </band-style>
+        <div class="gwd-div-bjyd gwd-div-1gik">
+          <div class="gwd-div-13x3" style="" id="tank-level" ng-style="{'height': tankLevel2.value + '%'}"></div>
+        </div>
+        <div class="gwd-div-bjyd gwd-div-1uy0">
+          <div class="gwd-div-13x3 gwd-div-1e5z" style="" id="tank-level_1" ng-style="{'height': tankLevel1.value + '%'}"></div>
+        </div>
+        <div class="gwd-div-1pts gwd-div-4aks">Tank 1</div>
+        <div class="gwd-div-1pts gwd-div-ej2s">Tank 2</div>
+        <div class="gwd-div-18ks" id="gauge-chart-display">
+          <gauge-chart style="height: 100%; width: 100%" point="tankLevel1" start="0" stop-1="50" stop-2="75" stop-3="100" interval="10"></gauge-chart>
+        </div>
+        <div class="gwd-div-1goh gwd-div-pbmn" id="clock-display">
+          <clock style="height: 100%; width: 100%" text="Sydney"></clock>
+        </div>
+        <div class="gwd-div-1goh gwd-div-1tjp" id="clock-display_1">
+          <clock style="height: 100%; width: 100%" timezone="Australia/Adelaide" text="Adelaide" show-seconds="false"></clock>
+        </div>
+        <div class="gwd-div-11iy" id="tank-level-display">
+          <tank-level style="height: 100%; width: 100%" point="tankLevel1" options="{depth3D: 45, angle: 45}"></tank-level>
+        </div>
+        <div class="gwd-div-13o4">Settable: {{point.pointLocator.settable}} CPU Temperature: {{cpuTemp.renderedValue}} @ {{cpuTemp.time | date: 'medium'}}</div>
+        <img is="gwd-image" source="assets/pT5opeL7c.png" id="gwd-image_4" class="gwd-img-1ca4">
+        <div class="gwd-div-16w8">DeltaView Industrial Signage</div>
+        <switch-style id="switch-style_1" value="lightningCode.value" class="gwd-switch-style-lvm9 gwd-switch-style-lpj5" case1-value="0" case1-style="{display: 'none'}" case2-value="1" case3-value="2" case2-style="{display: 'none'}" case3-style="{display: 'block', color: 'red'}">
+          <div class="gwd-div-4dzm gwd-div-cvzv">Cease work immediately and seek refuge.</div>
+        </switch-style>
+        <switch-style id="switch-style_2" value="lightningCode.value" class="gwd-switch-style-lvm9 gwd-switch-style-1ou6" case1-value="0" case1-style="{display: 'none'}" case2-value="1" case3-value="2" case2-style="{display: 'block', color: 'blue'}" case3-style="{display: 'block', color: 'red'}">
+          <div class="gwd-div-4dzm gwd-div-cvzv gwd-div-1bb7">Lightning code: {{lightningCode.renderedValue}}</div>
+        </switch-style>
+        <div class="gwd-div-ja3x gwd-div-1w2d" id="serial-chart-display">
+          <point-statistics point-xid="multistate" point="statsPoint" from="fromDate" to="toDate" from-filter="moment:'subtract':{{fromMinus}}:'{{fromPeriod.type}}'" to-filter="moment:'subtract':{{toMinus}}:'{{toPeriod.type}}'" refresh-interval="30 seconds" statistics="stats"></point-statistics>
+          <pie-chart style="height: 100%; width: 100%" values="stats.startsAndRuntimes" value-labels="statsPoint" options="{depth3D:15,angle:30}"></pie-chart>
+        </div>
+        <div class="gwd-div-ja3x gwd-div-1o2k" id="serial-chart-display_1">
+          <point-values point="point" from="fromDate" to="toDate" rollup="{{rollup.type}}" rollup-interval="{{timePeriods}} {{timePeriodType.type}}" from-filter="moment:'subtract':{{fromMinus}}:'{{fromPeriod.type}}'" to-filter="moment:'subtract':{{toMinus}}:'{{toPeriod.type}}'"
+          refresh-interval="30 seconds" latest="latest" values="values" realtime="realtime"></point-values>
+          <point-values point="point2" from="fromDate" to="toDate" rollup="{{rollup.type}}" rollup-interval="{{timePeriods}} {{timePeriodType.type}}" from-filter="moment:'subtract':{{fromMinus}}:'{{fromPeriod.type}}'" to-filter="moment:'subtract':{{toMinus}}:'{{toPeriod.type}}'"
+          refresh-interval="30 seconds" latest="latest" values="values2" realtime="realtime"></point-values>
+          <serial-chart style="height: 100%; width: 100%" series-1-values="values" series-2-values="values2" series-2-type="column"></serial-chart>
+        </div>
+        <point-value id="point-value_5" point-xid="tank-level-1" point="point" display-type="none" class="gwd-point-value-1igh"></point-value>
+        <point-value point-xid="tank-level-2" point="point2" display-type="none" class="gwd-point-value-1igh"></point-value>
+        <div class="gwd-input-dkn1" id="rollup-type">
+          Rollup:
+          <select ng-options="t.label for t in rollupTypes track by t.type" ng-model="rollup" ng-init="rollup={type:'AVERAGE'}"></select>
+          <br>Time periods:
+          <input type="number" ng-model="timePeriods" ng-init="timePeriods=1">
+          <br>Time period type:
+          <select ng-options="t.label for t in timePeriodTypes track by t.type" ng-model="timePeriodType" ng-init="timePeriodType={type:'HOURS'}"></select>
+        </div>
+        <div class="gwd-div-xada gwd-div-p0ll" id="from">
+          From date:
+          <input type="datetime-local" ng-model="fromDate">
+          <br>Minus:
+          <input type="number" ng-model="fromMinus" ng-init="fromMinus=2">
+          <br>Period:
+          <select ng-options="t.label for t in timePeriodTypes track by t.type" ng-model="fromPeriod" ng-init="fromPeriod={type:'DAYS'}"></select>
+          <br>Output: {{fromDate | moment:'subtract':fromMinus:fromPeriod.type | moment:'format':'LLL'}}
+        </div>
+        <div class="gwd-div-xada gwd-div-1m8v" id="to">
+          To date:
+          <input type="datetime-local" ng-model="toDate">
+          <br>Minus:
+          <input type="number" ng-model="toMinus" ng-init="toMinus=0">
+          <br>Period:
+          <select ng-options="t.label for t in timePeriodTypes track by t.type" ng-model="toPeriod" ng-init="toPeriod={type:'DAYS'}"></select>
+          <br>Output: {{toDate | moment:'subtract':toMinus:toPeriod.type | moment:'format':'LLL'}}
+        </div>
+        <div class="gwd-div-tb71" id="latest">
+          Realtime:
+          <input type="checkbox" ng-model="realtime">
+          <br>Latest
+          <input type="number" ng-model="latest">values
+        </div>
+        <div class="gwd-div-14fc gwd-div-1ka8 gwd-div-ryyo">Pie chart / stats point:</div>
+        <div class="gwd-div-14fc gwd-div-1ka8 gwd-div-ryyo gwd-div-1ia0">
+          Maximum: {{stats.maximum.value}}
+          <br>Minimum: {{stats.minimum.value}}
+          <br>Average: {{stats.average.value}}
+          <br>Integral: {{stats.integral.value}}
+        </div>
+        <point-list id="point-list_2" class="gwd-point-list-19zx gwd-point-list-1hi9" ng-model="statsPoint" order="deviceName, name"></point-list>
+        <div class="gwd-div-14fc gwd-div-1ka8 gwd-div-1amc" style="">Point 2 (bar graph):</div>
+        <div class="gwd-div-14fc gwd-div-1s24 editable gwd-div-123d">Current value: {{point2.renderedValue}}</div>
+        <point-list id="point-list_3" class="gwd-point-list-19zx gwd-point-list-1fkt" ng-model="point2" order="deviceName, name"></point-list>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+
+      var pageDeck = document.getElementById('pagedeck');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+
+      function handleDomContentLoaded(event) {}
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+
+        setTimeout(function() {
+          pageDeck.goToPage(pageDeck.getDefaultPage().id);
+        }, 0);
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+    })();
+  </script>
+</body>
+
+</html>

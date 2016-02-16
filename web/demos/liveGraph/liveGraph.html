@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head data-gwd-animation-mode="proMode">
+  <meta charset="utf-8">
+  <title>liveGraph</title>
+  <meta name="generator" content="Google Web Designer 1.4.2.0915">
+  <meta name="template" content="Expandable 2.2.4">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css" id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      -webkit-transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      -webkit-transform-style: preserve-3d;
+      position: absolute;
+      background-color: transparent;
+    }
+    .gwd-page-wrapper {
+      position: absolute;
+      -webkit-transform: translateZ(0px);
+      background-color: rgb(255, 255, 255);
+    }
+    .page1-content {
+      width: 550px;
+      height: 400px;
+    }
+    .gwd-div-1647 {
+      width: 1366px;
+      height: 768px;
+    }
+    .gwd-div-1hxb {
+      width: 1366px;
+      height: 768px;
+    }
+    .gwd-div-oilc {
+      position: absolute;
+      text-align: left;
+      color: rgb(0, 0, 0);
+      font-size: 60px;
+      font-weight: bold;
+      font-family: Lato;
+      top: 15px;
+      left: 501px;
+    }
+    .gwd-div-1v05 {
+      position: absolute;
+      width: 1300px;
+      height: 650px;
+      top: 100px;
+      left: 33px;
+    }
+    .gwd-ma-connection-pap4 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 486px;
+      top: -226px;
+    }
+  </style>
+  <link href="gwdpage_style.css" data-version="8" data-exports-type="gwd-page" rel="stylesheet">
+  <link href="angular-csp.css" data-version="0.14" data-exports-type="ma-connection" rel="stylesheet">
+  <link href="gwdpagedeck_style.css" data-version="8" data-exports-type="gwd-pagedeck" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script data-source="googbase_min.js" data-version="3" data-exports-type="googbase" type="text/javascript" src="googbase_min.js"></script>
+  <script data-source="gwd_webcomponents_min.js" data-version="4" data-exports-type="gwd_webcomponents" type="text/javascript" src="gwd_webcomponents_min.js"></script>
+  <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" type="text/javascript" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="8" data-exports-type="gwd-pagedeck" type="text/javascript" src="gwdpagedeck_min.js"></script>
+  <script data-source="config.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="config.js"></script>
+  <script data-source="require.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="require.js"></script>
+  <script data-source="ma-connection.js" data-version="0.14" data-exports-type="ma-connection" type="text/javascript" src="ma-connection.js"></script>
+</head>
+
+<body class="document-body" ng-cloak>
+  <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck">
+    <div is="gwd-page" id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-div-1hxb" data-gwd-width="1366px" data-gwd-height="768px">
+      <div class="gwd-page-content page1-content gwd-div-1647">
+        <div class="gwd-div-oilc">Live Graphing</div>
+        <div class="gwd-div-1v05">
+          <point-values point-xid="DP_119588" point="phaseA" latest="100" values="phaseAValues"></point-values>
+          <point-values point-xid="DP_278103" point="phaseB" latest="100" values="phaseBValues"></point-values>
+          <point-values point-xid="DP_331467" point="phaseC" latest="100" values="phaseCValues"></point-values>
+          <serial-chart style="height: 100%; width: 100%" series-1-title="Current Phase A" series-1-values="phaseAValues" series-2-title="Current Phase B" series-2-values="phaseBValues" series-3-title="Current Phase C" series-3-values="phaseCValues" options="{legend:{}, categoryAxis: {labelRotation:45, parseDates:true, minPeriod:'fff', equalSpacing:true}}">
+          </serial-chart>
+        </div>
+        <ma-connection id="ma-connection_1" class="gwd-ma-connection-pap4" username="guest" password="guest"></ma-connection>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+      document.body.style.opacity = "0";
+      var pageDeck = document.getElementById('pagedeck');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+
+      function handleDomContentLoaded(event) {}
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        document.body.style.opacity = "";
+        setTimeout(function() {
+          pageDeck.goToPage(pageDeck.getDefaultPage().id);
+        }, 0);
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+    })();
+  </script>
+</body>
+
+</html>
